@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "target": "es2017",
+    "outDir": "./dist",
+    "baseUrl": "./src",
+    "rootDir": ".",
+    "strict": false,
+    "alwaysStrict": false,
+    "noImplicitAny": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "noEmit": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "typeRoots": ["./node_modules/@types", "node_modules/@types", "types"],
+    "plugins": [{ "name": "nexus/typescript-language-service" }]
+  },
+  "include": ["src/**/*.ts", "types.d.ts", "."],
+  "exclude": ["node_modules"]
+}
